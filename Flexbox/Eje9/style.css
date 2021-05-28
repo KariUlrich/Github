@@ -1,0 +1,76 @@
+html,
+body {
+  height: 100%;
+  background-color: rgb(169, 201, 202);
+  margin: 0;
+  padding: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: rgb(15, 15, 26);
+  font-size: 14px;
+}
+main {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+container {
+  height: 600px;
+  width: 900px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  border-radius: 5%;
+}
+.dos {
+  display: flex;
+  flex-direction: row;
+  margin: 50px;
+  margin-left: 30px;
+}
+p {
+  font-size: 12px;
+}
+div {
+  height: 100px;
+  width: 500px;
+  margin: 5px;
+}
+h1 {
+  margin-left: 30px;
+  margin-bottom: 20px;
+}
+h2 {
+  font-size: 17px;
+  margin-bottom: 30px;
+}
+h3 {
+  font-size: 15px;
+}
+.costado > p {
+  color: rgb(247, 216, 138);
+}
+.costado {
+  margin-right: 20px;
+  margin-left: 20px;
+}
+.caja1 {
+  background-color: rgb(241, 211, 133);
+}
+.caja1,
+.caja2,
+.caja3,
+.caja4 {
+  padding: 20px;
+  border-radius: 5%;
+}
+i {
+  border-radius: 50%;
+  background-color: rgb(247, 226, 173);
+  padding: 10px;
+}
+.caja1 > i {
+  background-color: white;
+}
