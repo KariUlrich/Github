@@ -1,0 +1,91 @@
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+header {
+  height: 20%;
+  width: 100%;
+  background-color: blue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+nav {
+  height: 100%;
+  width: 30%;
+  background-color: red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.derecha {
+  height: 100%;
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.mainaside {
+  height: 100%;
+  width: 100%;
+  display: flex;
+}
+main {
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: orange;
+}
+aside {
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: greenyellow;
+}
+footer {
+  height: 40%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: green;
+}
+section {
+  display: flex;
+  flex-direction: row;
+  height: 80%;
+  width: 100%;
+}
+@media screen and (max-width: 1000px) {
+  section {
+    flex-direction: column;
+  }
+  nav {
+    height: 30%;
+    width: 100%;
+  }
+  .derecha {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 500px) {
+  .mainaside {
+    flex-direction: column;
+  }
+  aside {
+    width: 100%;
+    height: 60%;
+  }
+  main {
+    width: 100%;
+    height: 60%;
+  }
+}

@@ -1,0 +1,23 @@
+header {
+  height: 100%;
+  background-color: aqua;
+}
+
+nav {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 17px;
+  color: blueviolet;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 40px;
+}
+a {
+  text-decoration: none;
+  padding: 20px;
+}
+@media screen and (max-width: 900px) and (min-width: 600px) {
+  nav {
+    display: none;
+  }
+}
