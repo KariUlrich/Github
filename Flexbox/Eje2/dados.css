@@ -1,0 +1,31 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+  background-color: aqua;
+}
+
+main {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.dado {
+  display: flex;
+}
+.dado1,
+.dado2,
+.dado3,
+.dado4,
+.dado5,
+.dado6 {
+  height: 90px;
+  width: 90px;
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  border-radius: 10px;
+}

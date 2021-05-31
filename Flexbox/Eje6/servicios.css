@@ -1,0 +1,65 @@
+html,
+body {
+  height: 100%;
+  background-color: white;
+  margin: 0;
+  padding: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 17px;
+}
+h1 {
+  font-size: 35px;
+  font-weight: bold;
+  margin: 10px;
+}
+img {
+  height: 40px;
+  width: 40px;
+}
+h3 {
+  font-size: 22px;
+  font-weight: bold;
+}
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+header > p {
+  margin: 0px;
+}
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+.izquierda {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  height: 800px;
+  width: 50%;
+}
+.derecha {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  height: 800px;
+  width: 50%;
+}
+.texto {
+  display: flex;
+  flex-direction: column;
+}
+div {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 20px;
+}
+.lupa {
+  display: flex;
+  flex-direction: row;
+}

@@ -1,0 +1,57 @@
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+main {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: coral;
+  font-family: "Roboto", sans-serif;
+  font-size: 40px;
+  text-align: center;
+}
+i.fas.fa-bars {
+  display: none;
+}
+@media screen and (max-width: 900px) and (min-width: 600px) {
+  main {
+    font-size: 32px;
+    background-color: darkorchid;
+  }
+}
+@media screen and (max-width: 600px) {
+  main {
+    font-size: 24px;
+    background-color: gold;
+  }
+}
+header {
+  background-color: greenyellow;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+nav {
+  font-family: sans-serif;
+  font-size: 25px;
+}
+a {
+  color: tomato;
+  text-decoration: none;
+  margin: 30px;
+}
+@media screen and (max-width: 680px) {
+  nav {
+    display: none;
+  }
+  i.fas.fa-bars {
+    display: flex;
+  }
+}

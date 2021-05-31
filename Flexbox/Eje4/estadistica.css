@@ -1,0 +1,59 @@
+html,
+body {
+  height: 100%;
+  background-color: rgb(41, 41, 73);
+  font-family: sans-serif;
+  color: white;
+  padding: 0%;
+  margin: 0%;
+}
+.container {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+main {
+  height: 60%;
+  width: 800px;
+  background-color: darkblue;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+header {
+  height: 20%;
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+}
+section {
+  height: 60%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+div {
+  margin-left: 50px;
+  margin-right: 50px;
+}
+footer {
+  height: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+h3 {
+  display: flex;
+  justify-content: center;
+}
+p {
+  font-size: 12px;
+  align-items: center;
+}
+span {
+  color: springgreen;
+}
