@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="./style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <form action="pago" method="POST">
+      <h2>Formulario de pago</h2>
+      <br />
+
+      <label for="numero-de-tc"
+        >Numero de Tarjeta de crédito
+        <input type="number" name="numero" id="numero-de-tc" value="numero" />
+      </label>
+
+      <label for="nombre"
+        >Nombre completo del titular
+        <input type="text" name="nombre" id="nombre" />
+      </label>
+
+      <label for="mes"
+        >Mes
+        <select name="meses" id="mes" type="number" value="mes">
+          <option value="mes">1</option>
+          <option value="mes">2</option>
+          <option value="mes">3</option>
+          <option value="mes">4</option>
+          <option value="mes">5</option>
+          <option value="mes">6</option>
+          <option value="mes">7</option>
+          <option value="mes">8</option>
+          <option value="mes">9</option>
+          <option value="mes">10</option>
+          <option value="mes">11</option>
+          <option value="mes">12</option>
+          />
+        </select>
+      </label>
+
+      <label for="año"
+        >Año
+        <select name="años" id="año" type="number" value="año">
+          <option value="año">2021</option>
+          <option value="año">2022</option>
+          <option value="año">2023</option>
+          <option value="año">2024</option>
+          <option value="año">2025</option>
+          <option value="año">2026</option>
+          <option value="año">2027</option>
+          <option value="año">2028</option>
+          <option value="año">2029</option>
+          <option value="año">2030</option>
+          <option value="año">2031</option>
+          />
+        </select>
+      </label>
+
+      <label for="codigo"
+        >Código de seguridad
+        <input type="password" name="codigo" id="codigo" value="codigo" />
+      </label>
+
+      <input type="submit" value="Pagar" />
+    </form>
+  </body>
+</html>
