@@ -1,0 +1,143 @@
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: "Mukta", sans-serif;
+  font-size: 22px;
+}
+.lista {
+  list-style: none;
+  list-style-type: none;
+  display: flex;
+}
+a {
+  text-decoration: none;
+  margin: 20px;
+  padding: 10px;
+  color: black;
+}
+a:hover {
+  color: orange;
+}
+.CONT {
+  border-radius: 20px;
+  background-color: rgb(107, 127, 219);
+  color: white;
+  width: 100px;
+  height: 20px;
+  border: none;
+  font-size: 22px;
+}
+
+header {
+  height: 80px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background-color: rgb(245, 214, 214);
+  box-shadow: 0 14px 28px rgba(248, 188, 188, 0.25),
+    0 10px 10px rgba(243, 174, 174, 0.22);
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+}
+/*Presentacion*/
+.hola {
+  font-size: 30px;
+  color: rgb(65, 83, 117);
+}
+.yo {
+  font-size: 50px;
+  color: rgb(236, 136, 136);
+  font-family: "Pattaya", sans-serif;
+}
+
+.boton1 {
+  background-color: rgb(107, 127, 219);
+  color: white;
+  padding: 10px;
+  font-size: 20px;
+  border: none;
+  border-radius: 20px;
+}
+.section1 {
+  display: flex;
+  flex-direction: row;
+  height: 400px;
+  justify-content: space-around;
+  align-items: center;
+  margin: 190px 100px;
+}
+.img1 {
+  width: 400px;
+  height: 400px;
+}
+.div1 {
+  text-align: start;
+}
+/*Mis Conocimientos*/
+
+.conocimiento {
+  justify-content: center;
+  text-align: center;
+  margin: 0 200px;
+}
+.mis {
+  font-size: 35px;
+  font-weight: bold;
+}
+/*Iconos*/
+.icon {
+  width: 80px;
+  height: 80px;
+}
+.iconos {
+  height: 500px;
+  width: 1000px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.card {
+  height: 230px;
+  width: 230px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: 1px solid #f0c6ec;
+  border-radius: 8px;
+  margin: 10px;
+  margin-right: 50px;
+}
+/*Comillas*/
+.comillas1 {
+  height: 550px;
+  width: 100%;
+  background-color: rgb(236, 136, 136);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-top: 100px;
+}
+.comillas3 {
+  height: 80px;
+  width: 80px;
+  margin-top: 50px;
+}
+.textocomillas {
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-top: 60px;
+}
+.titulocomillas {
+  margin-top: 70px;
+  font-weight: bold;
+}
