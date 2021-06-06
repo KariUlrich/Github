@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="styles.css" rel="stylesheet" />
+  </head>
+  <body>
+    <main>
+      <form action="Formulario de registro" method="POST">
+        <p>
+          <label for="identificacion-de-nombre">Nombre</label>
+          <input
+            type="text"
+            name="primer nombre"
+            id="identificacion-de-nombre"
+            placeholder="Escribi tu nombre"
+          />
+        </p>
+        <p>
+          <label for="identificacion-de-apellido">Apellido</label>
+          <input
+            type="text"
+            name="apellido"
+            id="identificacion-de-apellido"
+            placeholder="Escribi tu apellido"
+          />
+        </p>
+        <p>
+          <label for="identificacion-de-dni">DNI</label>
+          <input
+            type="number"
+            name="dni"
+            id="identificacion-de-dni"
+            placeholder="DNI sin puntos"
+            maxlength="8"
+          />
+        </p>
+        <p>
+          <label for="email">Email</label>
+          <input
+            type="text"
+            name="email"
+            id="email"
+            placeholder="Ingresa tu email"
+          />
+        </p>
+        <p>
+          <label for="contraseña">Contraseña</label>
+          <input
+            type="text"
+            name="contraseña"
+            id="contraseña"
+            placeholder="Ingresa tu contraseña"
+            maxlength="16"
+            minlength="8"
+          />
+        </p>
+        <br />
+        <p>
+          <input
+            type="checkbox"
+            name="terminos y condiciones"
+            value="terminos"
+            id="Terminos y Condiciones"
+          />
+          <label for="Terminos y Condiciones">
+            Acepto terminos y condiciones: Lorem ipsum dolor sit amet,
+            consectetur adipisicing elit. Dicta aliquid vero accusantium
+            blanditiis architecto dolore, maxime totam expedita est, voluptas,
+            voluptatibus repudiandae quidem nisi reiciendis impedit. Asperiores
+            perferendis voluptatibus praesentium.</label
+          >
+        </p>
+      </form>
+    </main>
+  </body>
+</html>

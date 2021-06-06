@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="./styles.css" rel="stylesheet" />
+  </head>
+  <body>
+    <main>
+      <form action="Productos" method="POST">
+        <div>
+          <label for="titulo"> Titulo de producto</label>
+          <input type="text" name="titulo" id="titulo" />
+        </div>
+        <br />
+        <br />
+        <div>
+          <label for="marcas">Marcas</label>
+          <select name="marcas" id="marcas">
+            <option value="klatter">Klatter</option>
+            <option value="top mega">Top Mega</option>
+            <option value="fierce">Fierce</option>
+            <option value="shimano">Shimano</option>
+            <option value="lamborghini">Lamborghini</option>
+            <option value="aurora">Aurora</option>
+            <option value="gt">GT</option>
+          </select>
+        </div>
+        <br />
+        <br />
+        <div>
+          <label for="rodado">Rodado</label>
+          <input type="number" name="rodado" value="rodado" id="rodado" />
+        </div>
+        <br />
+        <br />
+        <div>
+          <label for="Categoria-de-producto">Categoria de Producto:</label>
+          <div class="cate">
+            <input
+              type="radio"
+              name="categoria"
+              value="categoria-mountain-bike"
+              id="mountain-bike"
+            />
+
+            <label for="mountain-bike">Fierce</label>
+            <input
+              type="radio"
+              name="categoria"
+              value="categoria-paseo"
+              id="paseo"
+            />
+            <label for="paseo">Paseo</label>
+            <input
+              type="radio"
+              name="categoria"
+              value="categoria-plegable"
+              id="plegable"
+            />
+            <label for="plegable">Plegable</label>
+            <input
+              type="radio"
+              name="categoria"
+              value="categoria-carrera"
+              id="carrera"
+            />
+            <label for="carrera">Carrera</label>
+          </div>
+        </div>
+        <br />
+        <br />
+        <label for="descripcion">Descripcion del producto</label>
+        <textarea
+          id="descripcion"
+          name="descripcion"
+          value="descripcion"
+          placeholder="Ingrese la descripcion"
+          class="des"
+          rows="10"
+          cols="50"
+        ></textarea>
+        <br />
+        <br />
+        <input class="cargar" type="submit" value="Cargar" />
+      </form>
+    </main>
+  </body>
+</html>

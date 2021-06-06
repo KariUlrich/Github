@@ -1,0 +1,38 @@
+html,
+body {
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  background-color: rgb(176, 194, 194);
+  font-family: serif;
+  font-size: 20px;
+}
+main {
+  margin: 40px;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  width: 700px;
+}
+.cate {
+  flex-direction: row;
+  display: flex;
+}
+input {
+  width: 200px;
+}
+.cargar {
+  width: 100px;
+  height: 30px;
+  background-color: darkcyan;
+  border-style: none;
+  font-family: serif;
+  font-size: 20px;
+}
+.des {
+  font-family: serif;
+  font-size: 18px;
+  height: 150px;
+}
