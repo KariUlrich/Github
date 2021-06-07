@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="styles.css" rel="stylesheet" />
+  </head>
+  <body>
+    <main>
+      <form action="Formulario de registro" method="POST">
+        <h2>Formulario de registro</h2>
+        <section>
+          <div>
+            <label for="identificacion-de-nombre">Nombre</label>
+            <input
+              type="text"
+              name="primer nombre"
+              id="identificacion-de-nombre"
+            />
+          </div>
+          <div>
+            <label for="identificacion-de-apellido">Apellido</label>
+            <input
+              type="text"
+              name="apellido"
+              id="identificacion-de-apellido"
+            />
+          </div>
+        </section>
+        <section>
+          <div>
+            <label for="identificacion-de-dni">DNI</label>
+            <input
+              type="number"
+              name="dni"
+              id="identificacion-de-dni"
+              maxlength="8"
+            />
+          </div>
+          <div>
+            <label for="email">Email</label>
+            <input type="email" name="correo" id="email" />
+          </div>
+        </section>
+        <section>
+          <div>
+            <label for="contraseña">Contraseña</label>
+            <input
+              type="password"
+              name="contraseña"
+              id="contraseña"
+              maxlength="16"
+              minlength="8"
+            />
+          </div>
+          <div>
+            <label for="repetir-contraseña">Repetir contraseña</label>
+            <input
+              type="password"
+              name="repetir-contraseña"
+              id="repetir-contraseña"
+              maxlength="16"
+              minlength="8"
+            />
+          </div>
+        </section>
+        <section class="contraseña">
+          <small
+            >* La contraseña debe tener tener entre 8 y 16 caracteres</small
+          >
+        </section>
+        <section class="acepto2">
+          <div class="acepto">
+            <input
+              type="checkbox"
+              name="terminos y condiciones"
+              value="terminos"
+              id="Terminos y Condiciones"
+            />
+            <label class="acepto1" for="Terminos y Condiciones">
+              Acepto terminos y condiciones
+            </label>
+          </div>
+          <div class="reg">
+            <input type="submit" value="Registrarse" />
+          </div>
+        </section>
+      </form>
+    </main>
+  </body>
+</html>
