@@ -11,17 +11,18 @@ body {
   list-style: none;
   list-style-type: none;
   display: flex;
+  margin-right: 50px;
 }
-a {
+.link a {
   text-decoration: none;
   margin: 20px;
   padding: 10px;
   color: black;
 }
-a:hover {
+.link a:hover {
   color: rgb(107, 127, 219);
 }
-a:active {
+.link a:active {
   box-shadow: 0px 0px 5px 1px rgb(107, 127, 219);
   border-radius: 20px;
 }
@@ -35,18 +36,18 @@ a:active {
 .CONT {
   border-radius: 20px;
   background-color: rgb(107, 127, 219);
-  color: white;
   width: 100px;
   height: 20px;
   border: none;
   font-size: 22px;
 }
-.CONT:hover {
-  background-color: rgb(149, 161, 214);
+.CONT span {
   color: white;
 }
-
-header {
+.CONT:hover {
+  background-color: rgb(149, 161, 214);
+}
+.navheader {
   height: 80px;
   display: flex;
   justify-content: flex-end;
@@ -63,23 +64,29 @@ header {
 .hola {
   font-size: 30px;
   color: rgb(65, 83, 117);
+  margin: 0;
 }
 .yo {
   font-size: 50px;
   color: rgb(236, 136, 136);
   font-family: "Pattaya", sans-serif;
+  margin: 0;
+}
+.tarea {
+  margin-bottom: 50px;
 }
 .boton1 {
   background-color: rgb(107, 127, 219);
-  color: white;
   padding: 10px;
   font-size: 20px;
   border: none;
   border-radius: 20px;
+  text-decoration: none;
+  margin: 20px;
+  color: white;
 }
 .boton1:hover {
   background-color: rgb(149, 161, 214);
-  color: white;
 }
 .boton1:focus {
   outline: none;
@@ -92,12 +99,12 @@ header {
   display: flex;
   flex-direction: row;
   height: 400px;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
-  margin: 190px 100px;
+  margin: 190px 0px;
 }
 .img1 {
-  width: 400px;
+  width: 450px;
   height: 400px;
 }
 .div1 {
@@ -173,9 +180,8 @@ header {
   margin-top: 50px;
 }
 .textocomillas {
-  margin-left: 100px;
-  margin-right: 100px;
   margin-top: 60px;
+  width: 1000px;
 }
 .titulocomillas {
   margin-top: 70px;
@@ -209,9 +215,12 @@ header {
   border: 1px solid rgb(238, 197, 197);
   border-radius: 15px;
   margin: 29px;
+  cursor: pointer;
 }
 .imagenes:hover {
   border-color: rgb(236, 136, 136);
+}
+.imagenes:hover .ima {
   color: rgb(236, 136, 136);
 }
 .ima:focus {
@@ -220,53 +229,72 @@ header {
 .imagenes:focus-within {
   border-color: rgb(236, 136, 136);
 }
+.ima:focus {
+  color: rgb(236, 136, 136);
+}
+.centrarwrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1100px;
+}
 .cards2 {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: center;
-  margin: 50px;
 }
 .ima {
   display: flex;
   flex-direction: column;
-}
-.ima:focus {
-  color: rgb(236, 136, 136);
-}
-.ima:hover {
-  color: rgb(236, 136, 136);
+  text-decoration: none;
+  margin: 20px;
+  padding: 10px;
+  color: black;
 }
 /*Formularios*/
+.centrarform {
+  display: flex;
+  width: 100%;
+  height: 650px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 150px;
+  margin-bottom: 150px;
+}
 .formulario {
   display: flex;
   flex-direction: row;
-  height: 700px;
+  height: 650px;
+  width: 1100px;
   border: 1px solid rgb(199, 180, 180);
   border-radius: 20px;
-  box-sizing: border-box;
-  margin: 300px 150px;
-  padding: 0;
 }
 .contactame {
   display: flex;
   flex-direction: column;
   font-size: 18px;
-  margin: 50px;
+  margin: 0 50px;
   width: 600px;
 }
-i {
-  color: rgb(107, 127, 219);
+.contactame h2 {
+  font-size: 45px;
+  font-weight: bold;
+}
+.contactame p {
+  line-height: 1.4;
+}
+.redes2 i {
+  color: rgb(236, 136, 136);
   padding-right: 10px;
 }
 .redes3 {
   list-style-type: none;
   justify-content: flex-start;
-  padding-top: 10px;
+  padding-bottom: 20px;
 }
-.redes2 {
-  margin: 0;
-  padding: 0;
+.redes a {
+  text-decoration: none;
+  color: black;
 }
 .redes {
   margin-top: 30px;
@@ -274,15 +302,95 @@ i {
 .escribime {
   width: 600px;
   font-size: 18px;
-  margin: 50px;
+  margin: 0 50px;
+}
+.escribime h2 {
+  font-size: 45px;
+  font-weight: bold;
 }
 .nombreyapellido {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
 }
 label {
+  display: flex;
   flex-direction: column;
+  font-weight: bold;
+  margin-top: 20px;
+}
+input[type="text"] {
+  width: 200px;
+  height: 30px;
+  color: rgb(168, 168, 168);
+  border: none;
+}
+input[type="email"] {
+  width: 300px;
+  height: 30px;
+  color: rgb(168, 168, 168);
+  border: none;
+}
+textarea {
+  color: rgb(168, 168, 168);
+  border: none;
 }
 form {
+  display: flex;
   flex-direction: column;
+}
+.botonformulario {
+  background-color: rgb(236, 136, 136);
+  color: white;
+  cursor: pointer;
+  border: none;
+  width: 100px;
+  height: 40px;
+  font-size: 18px;
+  border-radius: 20px;
+  margin-top: 20px;
+}
+/*Footer*/
+footer {
+  background-color: rgb(236, 136, 136);
+  height: 300px;
+}
+.ulfooter {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+  padding-left: 0;
+}
+.ulfooter a {
+  text-decoration: none;
+  color: white;
+}
+.lifooter {
+  margin: 10px;
+  font-size: 18px;
+}
+.ulfooter2 {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  padding-left: 0;
+}
+.lifooter2 {
+  margin: 10px;
+}
+.linkfooter i {
+  border: 1px solid rgb(236, 136, 136);
+  border-radius: 100%;
+  padding: 10px;
+  background-color: white;
+  color: rgb(236, 136, 136);
+}
+.amor {
+  display: flex;
+  justify-content: center;
+}
+.amor p {
+  font-size: 18px;
+  color: white;
 }
