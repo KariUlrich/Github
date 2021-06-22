@@ -7,6 +7,10 @@ body {
   font-family: "Mukta", sans-serif;
   font-size: 22px;
 }
+body {
+  display: flex;
+  flex-direction: column;
+}
 .lista {
   list-style: none;
   list-style-type: none;
@@ -29,8 +33,6 @@ body {
 .lista a:focus {
   box-shadow: 0px 0px 5px 1px rgb(107, 127, 219);
   border-radius: 20px;
-}
-.lista a:focus {
   outline: none;
 }
 .CONT {
@@ -59,6 +61,11 @@ body {
   left: 0;
   top: 0;
   width: 100%;
+}
+@media screen and (max-width: 1100px) and (min-width: 300px) {
+  .navheader {
+    display: none;
+  }
 }
 /*Presentacion*/
 .hola {
@@ -101,8 +108,7 @@ body {
   height: 400px;
   justify-content: space-evenly;
   align-items: center;
-  margin: 50px 0px;
-  padding-top: 150px;
+  padding: 250px 0px 150px 0px;
 }
 .img1 {
   width: 450px;
@@ -110,6 +116,28 @@ body {
 }
 .div1 {
   text-align: start;
+}
+@media screen and (max-width: 1100px) and (min-width: 300px) {
+  .section1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 1200px;
+  }
+  .div2 {
+    width: 450px;
+    height: 450px;
+    margin-top: 50px;
+  }
+  .div1 {
+    width: 350px;
+    height: 350px;
+  }
+}
+@media screen and (max-width: 550px) and (min-width: 300px) {
+  .yo {
+    font-size: 35px;
+  }
 }
 /*Mis Conocimientos*/
 .conocimiento {
@@ -133,7 +161,6 @@ body {
   font-size: 18px;
   margin: 0;
 }
-/*Iconos*/
 .icon {
   width: 80px;
   height: 80px;
@@ -166,6 +193,32 @@ body {
   border-color: rgb(236, 136, 136);
   color: rgb(236, 136, 136);
 }
+@media screen and (max-width: 1100px) and (min-width: 920px) {
+  .conocimiento {
+    width: 1200px;
+    height: 700px;
+  }
+}
+@media screen and (max-width: 920px) and (min-width: 600px) {
+  .conocimiento {
+    width: 1200px;
+    height: 1000px;
+  }
+  .iconos {
+    width: 600px;
+    height: 1000px;
+  }
+}
+@media screen and (max-width: 600px) and (min-width: 300px) {
+  .conocimiento {
+    width: 1200px;
+    height: 1900px;
+  }
+  .iconos {
+    width: 400px;
+    height: 1900px;
+  }
+}
 /*Comillas*/
 .comillas1 {
   background-color: rgb(236, 136, 136);
@@ -189,6 +242,24 @@ body {
   margin-top: 70px;
   font-weight: bold;
 }
+@media screen and (max-width: 1100px) and (min-width: 920px) {
+  .comillas1 {
+    width: 1200px;
+    height: 700px;
+  }
+}
+@media screen and (max-width: 920px) and (min-width: 600px) {
+  .comillas1 {
+    width: 1200px;
+    height: 700px;
+  }
+}
+@media screen and (max-width: 600px) and (min-width: 300px) {
+  .comillas1 {
+    width: 1200px;
+    height: 700px;
+  }
+}
 /*Mis Proyectos*/
 .proyectos {
   display: flex;
@@ -197,6 +268,7 @@ body {
   text-align: center;
   align-items: center;
   padding-top: 100px;
+  padding-bottom: 100px;
 }
 .misproyectos {
   font-size: 45px;
@@ -228,12 +300,10 @@ body {
 }
 .ima:focus {
   outline: none;
+  color: rgb(236, 136, 136);
 }
 .imagenes:focus-within {
   border-color: rgb(236, 136, 136);
-}
-.ima:focus {
-  color: rgb(236, 136, 136);
 }
 .centrarwrap {
   display: flex;
@@ -254,19 +324,56 @@ body {
   padding: 10px;
   color: black;
 }
+@media screen and (max-width: 1180px) and (min-width: 900px) {
+  .proyectos {
+    width: 1200px;
+    height: 1300px;
+  }
+  .centrarwrap {
+    width: 1150;
+    height: 1300px;
+  }
+}
+@media screen and (max-width: 900px) and (min-width: 550px) {
+  .proyectos {
+    width: 1200px;
+    height: 1500px;
+  }
+  .centrarwrap {
+    width: 800px;
+    height: 1500px;
+  }
+  .cards2 {
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 550px) and (min-width: 300px) {
+  .proyectos {
+    width: 1200px;
+    height: 2500px;
+  }
+  .centrarwrap {
+    width: 500px;
+    height: 2500px;
+  }
+  .cards2 {
+    flex-direction: column;
+    justify-content: center;
+  }
+}
 /*Formularios*/
 .centrarform {
   display: flex;
-  width: 100%;
-  height: 650px;
   justify-content: center;
   align-items: center;
-  padding-top: 150px;
-  margin-bottom: 150px;
+  background-color: rgb(240, 232, 232);
+  height: 650px;
+  padding: 200px 0px;
 }
 .formulario {
   display: flex;
   flex-direction: row;
+  background-color: rgb(253, 250, 250);
   height: 650px;
   width: 1100px;
   border: 1px solid rgb(199, 180, 180);
@@ -277,7 +384,7 @@ body {
   flex-direction: column;
   font-size: 18px;
   margin: 0 50px;
-  width: 600px;
+  width: 450px;
 }
 .contactame h2 {
   font-size: 45px;
@@ -286,26 +393,50 @@ body {
 .contactame p {
   line-height: 1.4;
 }
+.redes2 {
+  padding-left: 0px;
+}
 .redes2 i {
   color: rgb(236, 136, 136);
-  padding-right: 10px;
+  padding: 10px;
 }
 .redes3 {
   list-style-type: none;
-  justify-content: flex-start;
-  padding-bottom: 20px;
+  margin-bottom: 10px;
 }
-.redes a {
+.redes {
+  margin-top: 0px;
+}
+.linkicon {
+  padding: 10px;
   text-decoration: none;
   color: black;
 }
-.redes {
-  margin-top: 30px;
+.linkicon:hover {
+  color: rgb(236, 136, 136);
+}
+.linkicon:hover i {
+  background-color: rgb(236, 136, 136);
+  color: white;
+  border-radius: 100%;
+}
+.linkicon:active {
+  box-shadow: 0px 0px 5px 1px rgb(236, 136, 136);
+  border-radius: 20px;
+}
+.linkicon:focus {
+  box-shadow: 0px 0px 5px 1px rgb(236, 136, 136);
+  border-radius: 20px;
+  outline: none;
 }
 .escribime {
-  width: 600px;
+  width: 550px;
   font-size: 18px;
   margin: 0 50px;
+}
+form {
+  display: flex;
+  flex-direction: column;
 }
 .escribime h2 {
   font-size: 45px;
@@ -326,21 +457,26 @@ input[type="text"] {
   width: 200px;
   height: 30px;
   color: rgb(168, 168, 168);
+  border-radius: 20px;
+  background-color: rgb(243, 242, 242);
   border: none;
+  padding: 5px 10px;
 }
 input[type="email"] {
   width: 300px;
   height: 30px;
   color: rgb(168, 168, 168);
   border: none;
+  border-radius: 20px;
+  background-color: rgb(243, 242, 242);
+  padding: 5px 10px;
 }
 textarea {
   color: rgb(168, 168, 168);
   border: none;
-}
-form {
-  display: flex;
-  flex-direction: column;
+  border-radius: 15px;
+  background-color: rgb(243, 242, 242);
+  padding: 5px 10px;
 }
 .botonformulario {
   background-color: rgb(236, 136, 136);
@@ -353,8 +489,98 @@ form {
   border-radius: 20px;
   margin-top: 20px;
 }
+.botonformulario:hover {
+  border-radius: 20px;
+  background-color: rgb(235, 173, 173);
+}
+.botonformulario:focus {
+  border-radius: 20px;
+  box-shadow: 0px 0px 5px 1px rgb(236, 136, 136);
+  outline: none;
+}
+.botonformulario:active {
+  box-shadow: 0px 0px 5px 1px rgb(236, 136, 136);
+  background-color: rgb(236, 136, 136);
+  border-radius: 20px;
+}
+input[type="text"]:active {
+  box-shadow: 0px 0px 5px 1px rgb(236, 136, 136);
+  border-radius: 20px;
+}
+input[type="email"]:active {
+  box-shadow: 0px 0px 5px 1px rgb(236, 136, 136);
+  border-radius: 20px;
+}
+textarea:active {
+  box-shadow: 0px 0px 5px 1px rgb(236, 136, 136);
+  border-radius: 20px;
+}
+input[type="text"]:focus {
+  box-shadow: 0px 0px 5px 1px rgb(236, 136, 136);
+  border-radius: 20px;
+  outline: none;
+}
+input[type="email"]:focus {
+  box-shadow: 0px 0px 5px 1px rgb(236, 136, 136);
+  border-radius: 20px;
+  outline: none;
+}
+textarea:focus {
+  box-shadow: 0px 0px 5px 1px rgb(236, 136, 136);
+  border-radius: 20px;
+  outline: none;
+}
+@media screen and (max-width: 1180px) and (min-width: 900px) {
+  .centrarform {
+    width: 1200px;
+    height: 650px;
+  }
+  .formulario {
+    width: 1000px;
+    height: 650px;
+  }
+}
+@media screen and (max-width: 900px) and (min-width: 500px) {
+  .centrarform {
+    width: 1200px;
+    height: 1200px;
+  }
+  .formulario {
+    flex-direction: column;
+    width: 700px;
+    height: 1200px;
+  }
+}
+@media screen and (max-width: 500px) and (min-width: 300px) {
+  .centrarform {
+    width: 1200px;
+    height: 1300px;
+  }
+  .formulario {
+    flex-direction: column;
+    width: 600px;
+    height: 1300px;
+  }
+  .contactame {
+    flex-direction: column;
+    width: 500px;
+    height: 600px;
+  }
+  .escribime {
+    flex-direction: column;
+    width: 500px;
+    height: 600px;
+  }
+  .nombreyapellido {
+    flex-direction: column;
+  }
+}
 /*Footer*/
 footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   background-color: rgb(236, 136, 136);
   height: 300px;
 }
@@ -362,7 +588,6 @@ footer {
   list-style-type: none;
   display: flex;
   justify-content: center;
-  padding-top: 50px;
   padding-left: 0;
 }
 .ulfooter a {
@@ -389,11 +614,54 @@ footer {
   background-color: white;
   color: rgb(236, 136, 136);
 }
+.lifooter:active {
+  box-shadow: 0px 0px 5px 1px rgb(250, 247, 247);
+}
+.lifooter a:focus {
+  box-shadow: 0px 0px 5px 1px rgb(250, 247, 247);
+  outline: none;
+}
+.linkfooter i:hover {
+  border: 1px solid white;
+  border-radius: 100%;
+  background-color: rgb(236, 136, 136);
+  color: white;
+}
+.linkfooter i:active {
+  border: 1px solid white;
+  border-radius: 100%;
+  background-color: rgb(236, 136, 136);
+  color: white;
+  box-shadow: 0px 0px 5px 1px white;
+}
+.linkfooter:focus {
+  outline: none;
+  border: 1px solid white;
+  border-radius: 100%;
+  box-shadow: 0px 0px 5px 1px white;
+  background-color: rgb(236, 136, 136);
+  color: white;
+}
 .amor {
   display: flex;
   justify-content: center;
+  margin-bottom: 30px;
 }
 .amor p {
   font-size: 18px;
   color: white;
+}
+@media screen and (max-width: 1180px) and (min-width: 700px) {
+  footer {
+    width: 1200px;
+  }
+}
+@media screen and (max-width: 700px) and (min-width: 300px) {
+  footer {
+    width: 1200px;
+    align-items: center;
+  }
+  .navfooter {
+    display: none;
+  }
 }
