@@ -1,4 +1,4 @@
-## Primer trabajo de Portfolio personal en ADA <i class="fas fa-bug"></i>
+## Primer trabajo de Portfolio personal en ADA ![IMG](./palemra.png)
 
 ### Es una presentación personal y del proyecto Portfolio utilizando como tecnología:
 
