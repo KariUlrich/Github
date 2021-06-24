@@ -1,16 +1,16 @@
-# Primer trabajo de Portfolio personal en ADA <i class="fas fa-bug"></i>
+## Primer trabajo de Portfolio personal en ADA <i class="fas fa-bug"></i>
 
-## Es una presentación personal y del proyecto Portfolio utilizando como tecnología:
+### Es una presentación personal y del proyecto Portfolio utilizando como tecnología:
 
 -HTML
 
 -CSS
 
-## Enlace al proyecto para visitarlo
+### Enlace al proyecto para visitarlo
 
 Link al proyecto[link](https)
 
-## Contenido:
+### Contenido:
 
 -Header con presentación
 
