@@ -1,4 +1,3 @@
-html,
 body {
   height: 100%;
   width: 100%;
@@ -6,8 +5,6 @@ body {
   padding: 0;
   font-family: "Mukta", sans-serif;
   font-size: 22px;
-}
-body {
   display: flex;
   flex-direction: column;
 }
@@ -105,10 +102,9 @@ body {
 .section1 {
   display: flex;
   flex-direction: row;
-  height: 400px;
   justify-content: space-evenly;
   align-items: center;
-  padding: 250px 0px 150px 0px;
+  padding: 200px 0px 100px 0px;
 }
 .img1 {
   width: 450px;
@@ -151,6 +147,10 @@ body {
   padding-top: 80px;
 }
 .divconocimientos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   text-align: center;
 }
 .misconocimientos {
@@ -194,13 +194,13 @@ body {
   border-color: rgb(236, 136, 136);
   color: rgb(236, 136, 136);
 }
-@media screen and (max-width: 940px) and (min-width: 615px) {
+@media screen and (max-width: 940px) and (min-width: 680px) {
   .iconos {
     width: 750px;
     height: 750px;
   }
 }
-@media screen and (max-width: 615px) and (min-width: 580px) {
+@media screen and (max-width: 680px) and (min-width: 580px) {
   .iconos {
     width: 500px;
     height: 1500px;
@@ -209,7 +209,7 @@ body {
     width: 500px;
   }
 }
-@media screen and (max-width: 580px) and (min-width: 350px) {
+@media screen and (max-width: 580px) and (min-width: 500px) {
   .card {
     width: 200px;
     height: 200px;
@@ -219,10 +219,10 @@ body {
     height: 700px;
   }
   .textconocimientos {
-    width: 450px;
+    width: 400px;
   }
 }
-@media screen and (max-width: 450px) and (min-width: 300px) {
+@media screen and (max-width: 500px) and (min-width: 320px) {
   .card {
     width: 200px;
     height: 200px;
@@ -232,7 +232,10 @@ body {
     height: 1400px;
   }
   .textconocimientos {
-    width: 300px;
+    width: 250px;
+  }
+  .misconocimientos {
+    font-size: 30px;
   }
 }
 /*Comillas*/
@@ -275,9 +278,9 @@ body {
     width: 400px;
   }
 }
-@media screen and (max-width: 450px) and (min-width: 300px) {
+@media screen and (max-width: 450px) and (min-width: 320px) {
   .textocomillas {
-    width: 300px;
+    width: 260px;
   }
 }
 /*Mis Proyectos*/
@@ -286,7 +289,8 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 100px 20px;
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 .divmisproyectos {
   display: flex;
@@ -306,16 +310,22 @@ body {
   font-size: 18px;
 }
 .imag {
-  height: 200px;
   width: 200px;
 }
 .imagenes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   height: 300px;
   width: 300px;
   border: 1px solid rgb(238, 197, 197);
   border-radius: 15px;
-  margin: 20px;
+  margin: 14px;
   cursor: pointer;
+}
+.imagenes h4 {
+  font-size: 16px;
 }
 .imagenes:hover {
   border-color: rgb(236, 136, 136);
@@ -334,14 +344,13 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 1010px;
 }
 .cards2 {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   padding: 10px;
-  width: 1100px;
-  margin-left: 60px;
 }
 .ima {
   display: flex;
@@ -352,70 +361,77 @@ body {
   color: black;
   text-align: center;
 }
-@media screen and (max-width: 1080px) and (min-width: 980px) {
+@media screen and (max-width: 1070px) and (min-width: 900px) {
   .imagenes {
-    height: 280px;
-    width: 280px;
+    width: 250px;
+    height: 250px;
   }
   .imag {
-    height: 200px;
-    width: 200px;
+    width: 100%;
   }
   .cards2 {
-    justify-content: center;
-    margin-left: 0;
+    margin-left: 80px;
+  }
+  .centrarwrap {
+    width: 1000px;
   }
 }
-@media screen and (max-width: 980px) and (min-width: 900px) {
+@media screen and (max-width: 900px) and (min-width: 750px) {
   .imagenes {
-    height: 260px;
-    width: 260px;
+    width: 300px;
+    height: 300px;
   }
   .imag {
-    height: 200px;
     width: 200px;
   }
   .cards2 {
-    justify-content: center;
-    margin-left: 0;
+    margin-left: 120px;
   }
-}
-@media screen and (max-width: 900px) and (min-width: 660px) {
-  .imagenes {
-    height: 280px;
-    width: 280px;
-  }
-  .imag {
-    height: 200px;
-    width: 200px;
-  }
-  .cards2 {
-    justify-content: center;
-    margin-left: 0;
+  .centrarwrap {
     width: 900px;
   }
 }
-@media screen and (max-width: 660px) and (min-width: 320px) {
+@media screen and (max-width: 750px) and (min-width: 600px) {
   .imagenes {
-    height: 280px;
-    width: 280px;
+    width: 250px;
+    height: 250px;
   }
   .imag {
-    height: 200px;
+    width: 150px;
+  }
+  .cards2 {
+    margin-left: 220px;
+  }
+
+  .textproyectos {
+    font-size: 15px;
+  }
+  .centrarwrap {
+    width: 750px;
+  }
+}
+@media screen and (max-width: 600px) and (min-width: 320px) {
+  .imagenes {
+    width: 250px;
+    height: 250px;
+  }
+  .imag {
     width: 200px;
   }
   .cards2 {
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
-    margin-left: 0;
-    width: 600px;
   }
-  .textproyectos {
-    width: 300px;
-  }
-}
-@media screen and (max-width: 500px) and (min-width: 320px) {
   .textproyectos {
     font-size: 15px;
+  }
+  .textproyectos {
+    width: 280px;
+  }
+  .centrarwrap {
+    width: 600px;
+    margin-left: 10px;
   }
 }
 /*Formularios*/
@@ -424,8 +440,7 @@ body {
   justify-content: center;
   align-items: center;
   background-color: rgb(240, 232, 232);
-  height: 650px;
-  padding: 200px 0px;
+  padding: 100px 0px;
 }
 .formulario {
   display: flex;
@@ -442,7 +457,6 @@ body {
   flex-direction: column;
   font-size: 18px;
   margin: 0 50px;
-  width: 450px;
 }
 .contactame h2 {
   font-size: 45px;
@@ -488,7 +502,6 @@ body {
   outline: none;
 }
 .escribime {
-  width: 550px;
   font-size: 18px;
   margin: 0 50px;
 }
@@ -502,7 +515,6 @@ form {
 }
 .nombreyapellido {
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
 }
 label {
@@ -590,13 +602,17 @@ textarea:focus {
 }
 @media screen and (max-width: 1050px) and (min-width: 960px) {
   .escribime {
-    width: 450px;
+    width: 400px;
   }
   .formulario {
     width: 900px;
+    margin: 30px;
+  }
+  input[type="text"] {
+    width: 150px;
   }
   input[type="email"] {
-    width: 420px;
+    width: 380px;
   }
 }
 @media screen and (max-width: 960px) and (min-width: 320px) {
@@ -615,15 +631,15 @@ textarea:focus {
   .formulario {
     width: 800px;
   }
+  .escribime {
+    width: 300px;
+  }
 }
-@media screen and (max-width: 850px) and (min-width: 320px) {
+@media screen and (max-width: 860px) and (min-width: 320px) {
   .formulario {
     flex-direction: column;
     height: 1000px;
     width: 650px;
-  }
-  .centrarform {
-    height: 1000px;
   }
   input[type="text"] {
     width: 250px;
@@ -651,10 +667,10 @@ textarea:focus {
     width: 500px;
   }
 }
-@media screen and (max-width: 700px) and (min-width: 320px) {
+@media screen and (max-width: 750px) and (min-width: 320px) {
   .formulario {
     flex-direction: column;
-    height: 1100px;
+    height: 1000px;
     width: 550px;
   }
   .divredes2 {
@@ -676,22 +692,7 @@ textarea:focus {
     justify-content: flex-start;
   }
 }
-@media screen and (max-width: 600px) and (min-width: 320px) {
-  .formulario {
-    border: none;
-    height: 1200px;
-  }
-  .divredes2 {
-    flex-direction: column;
-  }
-  .divredes1 {
-    flex-direction: column;
-  }
-  .nombreyapellido {
-    flex-direction: column;
-  }
-}
-@media screen and (max-width: 520px) and (min-width: 320px) {
+@media screen and (max-width: 640px) and (min-width: 320px) {
   .formulario {
     width: 320px;
     height: 1250px;
@@ -703,6 +704,32 @@ textarea:focus {
     width: 200px;
   }
   textarea {
+    width: 200px;
+  }
+  .divredes2 {
+    flex-direction: column;
+    width: auto;
+  }
+  .divredes1 {
+    flex-direction: column;
+    width: auto;
+  }
+  .nombreyapellido {
+    flex-direction: column;
+  }
+  .redes3 {
+    font-size: 90%;
+  }
+}
+@media screen and (max-width: 440px) and (min-width: 320px) {
+  .formulario {
+    width: 290px;
+    height: 1300px;
+  }
+  .redes3 {
+    font-size: 75%;
+  }
+  .contactame p {
     width: 200px;
   }
 }
